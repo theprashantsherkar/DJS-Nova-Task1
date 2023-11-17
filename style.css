@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
+@keyframes slideLeft {
+    
+    from{
+        transform: translateX(-200px);
+    }
+
+    to{
+        transform: translateX(0);
+
+    }
+
+}
+
+
+
+
+
+.tagline{
+    margin-top: 130px;
+    margin-left: 200px;
+    animation-name: slideLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+
+}
+
+*{
+    font-family: 'PT Sans', sans-serif;
+    color: aliceblue;
+}
+
+body{
+    background-image: url(bgimg.jpg.crdownload);
+    background-repeat: no-repeat;
+    
+
+        
+    
+}
+
+#head{
+    padding-left: 40px;
+    
+    
+}
+
+#head a{
+    text-decoration: none;
+    transition: linear;
+    font-size: 40px;
+    transition-duration: 0.5s;
+}
+
+.trans2 a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: all ease 1s;
+}
+
+.trans2 a:hover::after{
+    width: 100%;
+
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 300px;
+
+
+}
+
+
+nav li a{
+    margin-right: 40px;
+    
+    font-size: 25px;
+
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color:rgb(25, 244, 244);
+    transition:linear;
+    transition-duration: 0.3s;
+
+}
+
+
+
+/* .p1{
+    display: flex;
+    margin: 20px;
+} */
+
+img{
+    width: 100px;
+    height: 70px;
+
+    margin-left: 90px;
+}
+
+#myBtn{
+    width: 100px;
+    height: 35px;
+    font-size: 25px;
+    border: 2px solid salmon;
+    color: black;
+    background-color:cyan;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#myBtn:hover{
+    background-color: salmon;
+    border-color: cyan;
+    transition: linear;
+    transition-duration: 0.3s;
+    
+}
+
+.p1{
+    
+    background-color: rgba(0, 0, 0, 0.057);
+    
+}
+
+h2 a{
+    text-decoration: none;
+    transition-duration: 0.5s;
+    font-size: 30px;
+}
+
+
+
+#darkmode{
+    width: 140px;
+    border-radius: 10px;
+    height: 35px;
+    font-size: 25px;
+    border: 2px solid salmon;
+    color: black;
+    background-color:cyan;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+
+#darkmode:hover{
+    background-color: salmon;
+    border-color: cyan;
+    transition: linear;
+    transition-duration: 0.3s;
+
+}
+
+#ref{
+    
+    height: 10px;
+    
+}
+
+h1{
+    font-size: 35px;
+}
+
+.moon{
+    margin-top: 400px;
+    margin-left: 250px;
+    font-size: 50px;
+    display: flex;
+    margin-bottom: 250px;
+    text-align: center;
+}
+
+.next{
+    background-color: rgb(58, 57, 57);
+    height: 120vh;
+    width: 100%;
+    text-align: center;
+
+}
+
+#secp{
+    padding-top: 50px;
+}
+
+
+
+#membut{
+    margin-left: 80%;
+    position:fixed;
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    border: 2px solid salmon;
+    color: black;
+    background-color:cyan;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#membut:hover{
+    background-color: salmon;
+    border-color: cyan;
+    transition: linear;
+    transition-duration: 0.3s;
+}
+
+.cont{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    display: grid;
+    padding-left: 170px;
+    grid-template-columns: repeat(2,600px);
+    grid-template-rows: repeat(2,350px);
+}
